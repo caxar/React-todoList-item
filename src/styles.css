@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  width: 370px;
+}
+
+.Notes {
+  position: relative;
+  border: 2px dashed grey;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.Notes span {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.delete {
+  background: red;
+  right: -15px;
+  top: -10px;
+}
+
+.newImportant {
+  background: green;
+  right: 15px;
+  top: -10px;
+}
+
+.Notes-item {
+  cursor: pointer;
+}
+
+.Notes-item.done {
+  text-decoration: line-through;
+  color: rgb(158, 158, 158);
+}
+
+.Notes-item.important {
+  color: blue;
+}
+
+.Add-input {
+  margin-bottom: 20px;
+}
+
+.Add-input input {
+  width: 100%;
+  height: 25px;
+  padding: 5px;
+  font-size: 20px;
+  outline: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 2px solid grey;
+}
+
+.Add-input button {
+  padding: 8px 25px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
+  background: grey;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.Add-input button:active {
+  transform: scale(0.95);
+}
